@@ -5,6 +5,7 @@ import About from './component/About';
 import Store from './component/Store';
 import Navbar from './component/Navbar';
 import NotFound from './component/NotFound';
+import User from './component/User';
 function App() {
   return (
     <div className="App">
@@ -17,6 +18,7 @@ function App() {
         {/* <Route path="/*" element={<NotFound/>}/> */}
         {/* //When user enter wrmng path and you want to redirect it then user navigate */}
         <Route path="/*" element={<Navigate to={"/"}/>}/>
+        <Route path="/user/:name" element={<User/>}/>
       </Routes>
       </BrowserRouter>
     </div>
