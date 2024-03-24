@@ -1,14 +1,14 @@
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 function Navbar()
 {
     return(
         <>
-        <ul>
-            <li><Link to={"/"}>home</Link></li>
-            <li><Link to={"store"}>Store</Link></li>
-            <li><Link to={"about"}>About Us</Link></li>
-            <li><Link to={"user/anil"}>Anil</Link></li>
-            <li><Link to={"user/peter"}>Peter</Link></li>
+        <ul className="navbar">
+            <li><NavLink className={"navbar_link"} to={"/"}>home</NavLink></li>
+            <li><NavLink className={"navbar_link"} to={"store"}>Store</NavLink></li>
+            <li><NavLink className={"navbar_link"} to={"about"}>About Us</NavLink></li>
+            <li><NavLink className={"navbar_link"} to={"user/anil"}>Anil</NavLink></li>
+            <li><NavLink className={"navbar_link"} to={"user/peter"}>Peter</NavLink></li>
         </ul>
         </>
     )
